@@ -1,1 +1,1 @@
-Projeto para a prática e entendimento desta maravilhosa biblioteca JavaScript .g
+Projeto para a prática e entendimento desta maravilhosa biblioteca JavaScript .
