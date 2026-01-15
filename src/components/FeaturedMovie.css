@@ -27,7 +27,7 @@
 .featured--info {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .featured--points,
@@ -86,3 +86,29 @@
     color: #fff;
 }
 
+@media (max-width: 760px) {
+    .featured{
+        height: 70vh;
+    }
+
+    .featured--name {
+        font-size: 40px;
+    }
+
+    .featured--info {
+        font-size: 16px;
+    }
+
+    .featured--description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .featured--watchbutton,
+    .featured--mylistbutton {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+}

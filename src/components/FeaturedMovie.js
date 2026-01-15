@@ -5,10 +5,18 @@ export default ({ item }) => {
 
     console.log(item);
 
+    // Convertendo a data para um formato mais legível
     let firstDate = new Date(item.first_air_date);
+    
+    // Pegando os gêneros
     let genres = [];
     for (let i in item.genres) {
         genres.push(item.genres[i].name);
+    }
+
+    let description = item.overview;
+    if(description.length > 200) {
+        description = description.substring(0, 200) + '...';
     }
 
     return (

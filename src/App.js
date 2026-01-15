@@ -1,5 +1,5 @@
 // Importamos a biblioteca
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // Importaremos o arquivo com o conteúdo do tdmb
 import Tmdb from './Tmdb';
@@ -96,7 +96,7 @@ export default () => {
 
       {movieList.length <= 0 &&
         <div className="loading">
-          <img src="https://media.filmelier.com/news/br/2020/03/Netflix_LoadTime.gif" alt="Carregando" />
+          <img src="https://media.wired.com/photos/592744d3f3e2356fd800bf00/3:2/w_2560%2Cc_limit/Netflix_LoadTime.gif" alt="Carregando" />
         </div>
       }
     </div>
