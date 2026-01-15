@@ -1,0 +1,25 @@
+/* Estilização do conteúdo que virá da API */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #FFF;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lists{
+    margin-top: -120px;
+}
+
+footer{
+    margin: 50px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}

@@ -1,13 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    box-sizing: border-box;
+.movieRow {
+    margin-bottom: 30px;
 }
 
-body{
-    background-color: #111;
+.movieRow h2 {
+    margin: 0px 0px 0px 40px;
+}
+
+.movieRow--listarea {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.movieRow--item {
+    display: inline-block;
+    width: 150px;
+}
+
+.movieRow--item img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.movieRow--item img:hover {
+    transform: scale(1);
+}
+
+.movieRow--left,
+.movieRow--right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right {
+    opacity: 1;
+}
+
+.movieRow--left {
+    left: 0;
+}
+
+.movieRow--right {
+    right: 0;
+}
+
+.movieRow--left:hover,
+.movieRow--right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.movieRow--listarea {
+    overflow-x: hidden;
+    padding-left: 30px;
+    margin-left: 40px;
+}
+
+.movieRow--list {
+    transition: all ease 0.5s;
+}
+
+.movieRow--item {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movieRow--item img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+    border-radius: 4px;
+}
+
+.movieRow--item img:hover {
+    transform: scale(1);
+}
+
+.movieRow--empty {
+    color: #999;
+    font-size: 16px;
+    padding: 40px;
+}
+
+.movieRow--empty:hover {
     color: #FFF;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
